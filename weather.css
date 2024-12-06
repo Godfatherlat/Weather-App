@@ -7,17 +7,20 @@
 
 
 body{
-    background-color: #738;
-    /* align-items: center; */
+    background-image: linear-gradient(skyblue,#65e,#94f,purple);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .card{
-    height: 230px;
+    height: 50rem;
     width: 100%;
     max-width: 480px;
     background: linear-gradient(135deg,#00feba,#5b548a);
-    color:  #d16969;
+    color:  #79e2ff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
@@ -69,7 +72,31 @@ body{
 
 .weather h2{
     font-size:50px;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: -10px;
 }
 
+/* .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px ;
+    margin:50px  ;
+    
+
+} */
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid rgb(97, 8, 8);
+    border-radius: 25px;
+
+}
+
+* p{padding: 5px;
+    color:rgb(86, 14, 48);
+}
