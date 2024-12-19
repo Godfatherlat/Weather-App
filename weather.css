@@ -37,10 +37,10 @@ body{
 }
 
 .search input{
-    height: 50px;
+    height: 70px;
     border: 1px solid rgb(242, 124, 222)   ;
     outline: 5px;
-    border-radius: 25px;
+    border-radius: 2rem;
     flex: 1;
     padding-left: 30px ;
     margin-right: 16px;
