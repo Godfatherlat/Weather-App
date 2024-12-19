@@ -38,10 +38,12 @@ body{
 
 .search input{
     height: 70px;
+    width: 400px;
     border: 1px solid rgb(242, 124, 222)   ;
     outline: 5px;
     border-radius: 2rem;
-    flex: 1;
+    /* flex: 350px; */
+    background:linear-gradient(-135deg,#00fe98,rgb(255, 203, 59),rgb(245, 128, 128),#01fcf8);
     padding-left: 30px ;
     margin-right: 16px;
     margin-left: 16px;
