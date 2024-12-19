@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
 
 body{
-    background: #c2c0c0;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,9 +18,9 @@ body{
 .card{
     height: 900px;
     width: 100%;
-    max-width: 480px;
-    background: linear-gradient(135deg,#00feba,rgb(144, 144, 255),rgb(245, 128, 128),#01fcf8);
-    color:  #79e2ff;
+    max-width: 550px;
+    background: linear-gradient(135deg,#00fe98,rgb(144, 144, 255),rgb(245, 128, 128),#01fcf8);
+    /* color:  rgb(255, 106, 0); */
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
@@ -52,7 +52,7 @@ body{
 .search button{
     border: 0;
     outline: 0;
-    background: #ebfffc;
+    background: #f7fffe;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -89,6 +89,7 @@ body{
     } 
 
 .col{
+    width: 450px;
     display: flex;
     align-items: center;
     text-align: left;
@@ -101,5 +102,5 @@ body{
 
 * p{
     padding: 5px;
-    color:rgb(86, 14, 48);
+    color:rgb(255, 255, 255);
 }
