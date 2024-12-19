@@ -16,6 +16,7 @@ async function checkWeather( city) {
     var data= await response.json();
     console.log(data.name);
     
+    
     // console.log(data.main.temp+"°C");
     // console.log(data.main.humidity+"%");
     // console.log(data.wind.speed+"km/hr");
@@ -27,6 +28,13 @@ async function checkWeather( city) {
     
 
     document.querySelector(".city__name").innerHTML=data.name;
+
+    if(data.name==undefined ){
+        console.log("Enter Valid City/Country/Region name....!!!!");
+        document.querySelector(".city__name").innerHTML="Not a valid city name";
+        alert("Enter Valid City/Country/Region name....!!!!")
+        
+    }
     document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"°C";
     document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
     document.querySelector(".wind_speed").innerHTML=data.wind.speed+"km/hr";
@@ -57,9 +65,7 @@ async function checkWeather( city) {
         weatherIcon.src="Images/Snowy.png"
     }
 
-    if(data.name==undefined){
-        alert("Enter Valid City/Country/Region name....!!!!")
-    }
+    
     
         
 }
