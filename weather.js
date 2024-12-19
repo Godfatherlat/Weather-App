@@ -32,6 +32,7 @@ async function checkWeather( city) {
     document.querySelector(".wind_speed").innerHTML=data.wind.speed+"km/hr";
     console.log(data);
     console.log(data.weather[0].main);
+    console.log(data.name);
 
    
    
@@ -54,6 +55,10 @@ async function checkWeather( city) {
     }
     else if(data.main.temp<0){
         weatherIcon.src="Images/Snowy.png"
+    }
+
+    if(data.name==undefined){
+        alert("Enter Valid City/Country/Region name....!!!!")
     }
     
         
