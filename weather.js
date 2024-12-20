@@ -7,7 +7,9 @@ const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox=document.querySelector(".search input");
 const searchBtn=document.querySelector(".search button");
-const weatherIcon=document.querySelector(".weather-icon")
+const weatherIcon=document.querySelector(".weather-icon");
+const weatherPic=document.querySelector("#weather_pic");
+
 
 async function checkWeather( city) {
  // const response=await fetch(apiUrl+`&appid=${apiKey}`);
@@ -49,20 +51,26 @@ async function checkWeather( city) {
     }
     else if(data.weather[0].main=='Rain'){
         weatherIcon.src="Images/Rainy.png"
+        weatherPic.src="Images/rainyMan.png"
     }
     else if((data.weather[0].main=='Clouds')&&(data.main.temp>46)){
         weatherIcon.src="Images/Hot-Temp.png"
+         weatherPic.src="Images/chillwork.png"
     }
     else
      if((data.weather[0].main=='Clouds')&&(data.main.temp>0)){
         weatherIcon.src="Images/More-Cloudy.png"
+        weatherPic.src="Images/chillwork.png"
     }
     else 
     if(data.weather[0].main=='Clear'){
         weatherIcon.src="Images/Sunny.png"
+        weatherPic.src="Images/chillwork.png"
     }
     else if(data.main.temp<0){
         weatherIcon.src="Images/Snowy.png"
+        weatherPic.src="Images/snowboard.png"
+        
     }
 
     
