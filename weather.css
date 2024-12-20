@@ -7,7 +7,7 @@
 
 
 body{
-    background: #ffffff;
+    background: linear-gradient(-45deg,rgb(246, 203, 123),#fff700);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -16,7 +16,7 @@ body{
 
 
 .card{
-    height: 900px;
+    height: 950px;
     width: 100%;
     max-width: 550px;
     background: linear-gradient(135deg,#00fe98,rgb(144, 144, 255),rgb(245, 128, 128),#01fcf8);
@@ -105,4 +105,8 @@ body{
 * p{
     padding: 5px;
     color:rgb(255, 255, 255);
+}
+
+#weather_pic{
+    display: flex;
 }
